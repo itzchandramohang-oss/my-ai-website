@@ -1,0 +1,12 @@
+{
+  "name": "ai-customer-support-intelligent-platform",
+  "version": "1.0.0",
+  "description": "Static marketing site with a Python Flask backend",
+  "main": "app.py",
+  "scripts": {
+    "start": "python3 app.py",
+    "dev": "python3 app.py"
+  },
+  "private": true,
+  "license": "MIT"
+}

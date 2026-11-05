@@ -1,0 +1,46 @@
+h1 {
+  max-width: 700px;
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.hero > p:not(.eyebrow),
+.content-section p {
+  max-width: 650px;
+  color: var(--color-muted);
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.4rem;
+    background: var(--color-white);
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

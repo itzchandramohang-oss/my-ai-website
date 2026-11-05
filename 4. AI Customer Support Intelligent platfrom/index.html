@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple sample website.">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/navigation.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">My Website</a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/services.html">Services</a>
+      <a href="pages/contact.html">Contact</a>
+      <a href="#assistant">AI Assistant</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI-powered customer support</p>
+        <h1>Better support, powered by AI</h1>
+        <p>Help your team respond faster with intelligent answers, ticket summaries, and customer support that feels personal.</p>
+        <div class="hero-actions">
+          <a class="button" href="#assistant">Try AI support</a>
+          <a class="button button-secondary" href="pages/about.html">Learn about us</a>
+        </div>
+      </div>
+      <img
+        class="hero-image"
+        src="images/ai-customer-support.svg"
+        alt="Illustration of an AI assistant helping a customer support team"
+        width="640"
+        height="480"
+      >
+    </section>
+
+    <section class="content-section">
+      <h2>What we do</h2>
+      <p>We build AI-powered customer support experiences that help teams respond faster and smarter.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>AI features</h2>
+      <p>Our platform can answer support questions, route high-priority issues, and improve the customer experience with instant, intelligent assistance.</p>
+    </section>
+
+    <section class="content-section assistant-section" id="assistant">
+      <p class="eyebrow">Here to help</p>
+      <h2>Ask our AI support assistant</h2>
+      <p>Get quick answers about our platform, services, setup, and support.</p>
+
+      <div class="assistant-layout">
+        <section class="assistant-panel" aria-label="AI assistant chat">
+          <div id="chat-log" class="chat-log" aria-live="polite">
+            <div class="message bot">Hi! Ask me about our company, services, integrations, or support.</div>
+          </div>
+          <form class="assistant-form" id="assistant-form">
+            <input id="assistant-input" type="text" name="message" placeholder="Type your question..." aria-label="Ask the AI assistant" required>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+
+        <aside class="assistant-sidebar">
+          <h3>Popular questions</h3>
+          <div class="quick-prompts">
+            <button type="button" class="prompt-button">Tell me about your company</button>
+            <button type="button" class="prompt-button">What services do you offer?</button>
+            <button type="button" class="prompt-button">Which integrations do you support?</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-current-year></span> My Website</p>
+  </footer>
+  <script src="js/ai-chat.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">AI customer support</title>
+  <desc id="description">A friendly AI assistant connects a customer with a support team.</desc>
+  <defs>
+    <linearGradient id="background" x1="86" y1="49" x2="564" y2="423" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="172" y1="107" x2="488" y2="367" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="226" y1="126" x2="415" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="shadow" x="104" y="58" width="432" height="370" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="backgroundFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.12 0 0 0 0 0.23 0 0 0 0 0.42 0 0 0 0.14 0"/>
+      <feBlend in2="backgroundFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <circle cx="320" cy="240" r="220" fill="url(#background)"/>
+  <circle cx="94" cy="143" r="9" fill="#93C5FD"/>
+  <circle cx="552" cy="324" r="13" fill="#BFDBFE"/>
+  <path d="M75 332c27-18 50-18 70 0M495 100c24 15 48 15 72 0" stroke="#93C5FD" stroke-linecap="round" stroke-width="4"/>
+  <g filter="url(#shadow)">
+    <rect x="139" y="88" width="362" height="290" rx="24" fill="url(#screen)"/>
+    <path d="M139 112a24 24 0 0 1 24-24h314a24 24 0 0 1 24 24v29H139v-29Z" fill="#fff"/>
+    <circle cx="166" cy="115" r="5" fill="#FCA5A5"/>
+    <circle cx="184" cy="115" r="5" fill="#FCD34D"/>
+    <circle cx="202" cy="115" r="5" fill="#86EFAC"/>
+    <rect x="229" y="109" width="124" height="12" rx="6" fill="#E2E8F0"/>
+    <path d="M139 141h362" stroke="#E2E8F0"/>
+    <rect x="166" y="163" width="48" height="48" rx="16" fill="#DBEAFE"/>
+    <path d="M190 174v26m-13-13h26m-22-9 18 18m0-18-18 18" stroke="#2563EB" stroke-linecap="round" stroke-width="3"/>
+    <rect x="229" y="164" width="210" height="60" rx="16" fill="#EFF6FF"/>
+    <rect x="248" y="181" width="154" height="8" rx="4" fill="#93C5FD"/>
+    <rect x="248" y="197" width="122" height="8" rx="4" fill="#BFDBFE"/>
+    <rect x="280" y="243" width="191" height="56" rx="16" fill="url(#accent)"/>
+    <rect x="300" y="261" width="143" height="8" rx="4" fill="#fff" fill-opacity=".92"/>
+    <rect x="300" y="277" width="106" height="7" rx="3.5" fill="#DBEAFE"/>
+    <rect x="166" y="319" width="304" height="35" rx="12" fill="#F1F5F9"/>
+    <circle cx="188" cy="336" r="8" fill="#60A5FA"/>
+    <rect x="207" y="332" width="147" height="8" rx="4" fill="#CBD5E1"/>
+    <circle cx="447" cy="336" r="10" fill="#2563EB"/>
+    <path d="m443 336 3 3 5-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="108" cy="279" r="31" fill="#FDE68A"/>
+    <path d="M69 385c2-42 17-64 39-64s37 22 39 64H69Z" fill="#2563EB"/>
+    <path d="M94 278c0 3 2 5 5 5m22-5c0 3-2 5-5 5m-13 12c4 4 9 4 13 0" stroke="#7C2D12" stroke-linecap="round" stroke-width="2.5"/>
+    <path d="M79 266c5-18 17-27 31-27 13 0 24 8 29 22-13-1-24-5-33-13-6 10-15 16-27 18Z" fill="#334155"/>
+  </g>
+  <g>
+    <circle cx="537" cy="214" r="25" fill="#C4B5FD"/>
+    <path d="M505 290c2-34 14-52 32-52 19 0 30 18 32 52h-64Z" fill="#7C3AED"/>
+    <path d="M527 214c0 2 2 4 4 4m15-4c0 2-2 4-4 4m-9 10c3 3 7 3 10 0" stroke="#4C1D95" stroke-linecap="round" stroke-width="2"/>
+    <path d="M513 204c3-14 12-21 25-21 10 0 18 6 22 17-10 0-19-3-26-9-5 7-12 11-21 13Z" fill="#334155"/>
+  </g>
+</svg>

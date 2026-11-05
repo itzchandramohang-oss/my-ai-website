@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistant | My Website</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .assistant-layout {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: start;
+    }
+
+    .assistant-panel,
+    .assistant-sidebar {
+      background: var(--color-white);
+      border: 1px solid #e2e8f0;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    }
+
+    .assistant-panel {
+      padding: 1.25rem;
+    }
+
+    .chat-log {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      min-height: 320px;
+      max-height: 420px;
+      overflow-y: auto;
+      padding-right: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .message {
+      max-width: 80%;
+      padding: 0.8rem 1rem;
+      border-radius: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .message.user {
+      align-self: flex-end;
+      background: #dbeafe;
+      color: var(--color-text);
+    }
+
+    .message.bot {
+      align-self: flex-start;
+      background: #f1f5f9;
+      color: var(--color-text);
+    }
+
+    .assistant-form {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .assistant-form input {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.8rem 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.6rem;
+      font: inherit;
+    }
+
+    .assistant-form button {
+      padding: 0.8rem 1.1rem;
+      border: 0;
+      border-radius: 0.6rem;
+      background: var(--color-primary);
+      color: var(--color-white);
+      cursor: pointer;
+    }
+
+    .assistant-sidebar {
+      padding: 1.25rem;
+    }
+
+    .quick-prompts {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .quick-prompts button {
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid #dbeafe;
+      border-radius: 0.6rem;
+      background: #f8fbff;
+      color: var(--color-text);
+      cursor: pointer;
+    }
+
+    @media (max-width: 800px) {
+      .assistant-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../index.html">My Website</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="../index.html#assistant">AI Assistant</a>
+    </nav>
+  </header>
+
+  <main class="content-section">
+    <h1>AI Customer Support</h1>
+    <p>Ask about pricing, onboarding, integrations, or support coverage.</p>
+
+    <div class="assistant-layout" style="margin-top: 2rem;">
+      <section class="assistant-panel" aria-label="AI assistant chat panel">
+        <div id="chat-log" class="chat-log" aria-live="polite">
+          <div class="message bot">Hi! I’m your AI support assistant. Ask me anything about plans, setup, or customer support.</div>
+        </div>
+
+        <form class="assistant-form" id="assistant-form">
+          <input id="assistant-input" type="text" name="message" placeholder="Ask about pricing, setup, support..." aria-label="Ask the AI assistant" required>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <aside class="assistant-sidebar">
+        <h2>Popular questions</h2>
+        <div class="quick-prompts">
+          <button type="button" class="prompt-button">What are your pricing plans?</button>
+          <button type="button" class="prompt-button">How long does onboarding take?</button>
+          <button type="button" class="prompt-button">Do you support integrations?</button>
+          <button type="button" class="prompt-button">What support hours do you offer?</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; My Website</p>
+  </footer>
+
+  <script src="../js/ai-chat.js" defer></script>
+</body>
+</html>
